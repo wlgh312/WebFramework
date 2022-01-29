@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop 	http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+<!-- 핵심로직 ItemTrage을 bean으로 설정-->
+<bean id="itemTarget" class="week11.ItemTarget"></bean>
+<bean id="KimsTarget" class="week11.KimsTarget"></bean>
+<!-- 관점로직 LoggingAdvice를 bean으로 설정 -->
+<bean id="loggingAdvice" class="week11.LoggingAdvice"></bean>
+
+<aop:config>
+   <aop:aspect ref="loggingAdvice">
+          <aop:before method="beforeAdvice" pointcut="execution(* week11.ItemTarget.*(..))"/>
+		  <aop:before method="beforeAdvice2" pointcut="execution(* week11.ItemTarget.buyItem())"/>
+          <aop:after method="afterAdvice" pointcut="execution(* week11.*Target.buy*(..))"/>
+          <aop:around method="aroundAdvice" pointcut="execution(* week11.*Target.buy*(..))"/>
+   </aop:aspect>
+
+</aop:config>
+
+</beans>

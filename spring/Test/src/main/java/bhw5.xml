@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="EmotionBase" class="hw5.Emotion" abstract="true">
+<property name="day" value="어제"></property>
+<property name="em" value="sad"></property>
+</bean>
+<bean id="yesterday" parent="EmotionBase"></bean>
+<bean id="today" parent="EmotionBase">
+<property name="day" value="오늘"></property>
+<property name="em" value="happy"></property>
+</bean>
+<bean id="past" parent="EmotionBase">
+<property name="day" value="그저께"></property>
+<property name="em" value="annoyed"></property></bean>
+</beans>

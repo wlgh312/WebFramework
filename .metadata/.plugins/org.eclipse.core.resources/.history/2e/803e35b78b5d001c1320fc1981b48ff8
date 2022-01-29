@@ -1,0 +1,104 @@
+package edu.kim.webfinal;
+
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
+import java.io.File;
+import com.oreilly.servlet.*;
+import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
+import java.sql.Blob;
+import java.sql.SQLException;
+
+import edu.kim.webfinal.db.InfDB;
+
+/**
+ * Handles requests for the application home page.
+ */
+@Controller
+public class InfController {
+	
+	private static final Logger logger = LoggerFactory.getLogger(InfController.class);
+	
+	@Autowired
+	private InfDB infdb;
+	
+	@RequestMapping(value="/infinput.do", method= RequestMethod.POST)
+	public String stdinput(@ModelAttribute Inform ret, Model model) {
+		model.addAttribute("msg", ret);
+		infdb.create(ret);
+		return "redirect:inf_list.do";
+	}
+	@RequestMapping(value="/inf1.do", method=RequestMethod.GET)
+	public String eprocess1(Model model) {
+		model.addAttribute("msg", new Inform());
+		return "/infinput";
+	}
+	@RequestMapping(value="/inf_list.do", method=RequestMethod.GET)
+	public String getInform(Model model, Inform ret, @RequestParam(value="seq", required=false, defaultValue="0") int seq) {
+		infdb.caution(ret);
+		if(seq==0) {
+			List<Inform> inf = infdb.select();
+			model.addAttribute("inf_cmd", inf);
+			List<Integer> preGrade=infdb.preGrade();
+			model.addAttribute("preGrade", preGrade);
+			return "list";
+		}else {
+			Inform inf = infdb.select(seq);
+			model.addAttribute("msg", inf);
+			return "result";
+		}
+	}
+	@RequestMapping(value="/blobinput.do", method=RequestMethod.GET)
+	public String imginput(Model model, @RequestParam(value="seq", required=true) int seq) {
+		Inform inf = infdb.select(seq);
+		model.addAttribute("msg", inf);
+		return "/blobinput";
+	}
+	@RequestMapping(value="/paperPrint.do", method = RequestMethod.POST)
+	public String paperP(Model model, HttpServletRequest request, @RequestParam(value="seq", required = false) int seq) {
+		Inform inf = infdb.select(seq);
+		model.addAttribute("msg", inf);
+		String filename="";
+		String realPath = request.getSession().getServletContext().getRealPath("upload");
+		String pic=realPath;
+		model.addAttribute("pic", pic);
+		
+		return "redirect:/paperPrint.do?seq=" + seq;
+	}
+	@RequestMapping(value="/inf_delete.do", method = RequestMethod.GET)
+	public String delete(@RequestParam(value="seq", required = true) int seq) {
+		infdb.delete(seq);
+		return "redirect:/inf_list.do";
+	}
+	@RequestMapping(value="/inf_update.do", method = RequestMethod.GET)
+	public String m_update(Model model, @RequestParam(value="seq", required=true) int seq) {
+		Inform inf = infdb.select(seq);
+		model.addAttribute("msg", inf);
+		return "/infinput";
+	}
+	@RequestMapping(value="/update/infinput.do", method = RequestMethod.POST)
+	public String update(@ModelAttribute Inform inf) {
+		infdb.update(inf);
+		return "redirect:/inf_list.do?seq="+inf.getSeq();
+	}
+	
+}

@@ -1,0 +1,40 @@
+package edu.kim.finalP;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import edu.kim.finalP.db.InfoDB;
+
+public class InfoController {
+	@Autowired
+	private InfoDB infodb;
+	@RequestMapping(value="/infinput.do", method= RequestMethod.POST)
+	public String infinput(@ModelAttribute Inform ret, Model model) {
+		model.addAttribute("msg", ret);
+		infodb.create(ret);
+		return "/result";
+	}
+	@RequestMapping(value="/inf1.do", method=RequestMethod.GET)
+	public String eprocess1(Model model) {
+		model.addAttribute("msg", new Inform());
+		return "/infinput";
+	}
+	@RequestMapping(value="/inf_list.do", method=RequestMethod.GET)
+	public String getInfo(Model model, @RequestParam(value="seq", required=false, defaultValue="0") int seq) {
+		if(seq==0) {
+			List<Inform> inf = infodb.select();
+			model.addAttribute("inf_cmd", inf);
+			return "list";
+		}else {
+			Inform inf = infodb.select(seq);
+			model.addAttribute("msg", inf);
+			return "result";
+		}
+	}
+}

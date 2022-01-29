@@ -1,0 +1,63 @@
+
+12월 09, 2021 24:24:50.14 NEW SESSION
+12월 09, 2021 24:24:50.14 [27304:22392:1209/002450.140:ERROR:data_type_manager_impl.cc(35)] Passwords cryptographer error was encountered: 
+12월 09, 2021 24:24:51.84 [27304:22164:1209/002451.848:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+12월 09, 2021 24:24:51.85 [27304:22164:1209/002451.849:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+12월 09, 2021 24:24:51.85 [27304:22392:1209/002451.850:ERROR:device_event_log_impl.cc(214)] [00:24:51.850] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 24:24:51.85 [27304:22392:1209/002451.853:ERROR:device_event_log_impl.cc(214)] [00:24:51.853] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 24:24:51.85 [27304:22164:1209/002451.854:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+12월 09, 2021 24:24:51.86 [27304:22164:1209/002451.861:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+12월 09, 2021 24:44:05.93 [18504:18072:1209/004405.928:ERROR:data_type_manager_impl.cc(35)] Passwords cryptographer error was encountered: 
+12월 09, 2021 24:44:07.64 [18504:18072:1209/004407.644:ERROR:device_event_log_impl.cc(214)] [00:44:07.644] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 24:44:07.64 [18504:18072:1209/004407.646:ERROR:device_event_log_impl.cc(214)] [00:44:07.645] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 24:44:07.64 [18504:12768:1209/004407.646:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+12월 09, 2021 24:44:07.64 [18504:12768:1209/004407.646:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+12월 09, 2021 24:44:07.64 [18504:12768:1209/004407.646:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+12월 09, 2021 24:44:07.65 [18504:12768:1209/004407.657:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+12월 09, 2021 24:51:33.07 [30208:26520:1209/005133.070:ERROR:data_type_manager_impl.cc(35)] Passwords cryptographer error was encountered: 
+12월 09, 2021 24:51:34.62 [30208:26520:1209/005134.620:ERROR:device_event_log_impl.cc(214)] [00:51:34.619] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 24:51:34.62 [30208:26520:1209/005134.621:ERROR:device_event_log_impl.cc(214)] [00:51:34.621] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 24:51:34.63 [30208:28020:1209/005134.637:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+12월 09, 2021 24:51:34.64 [30208:28020:1209/005134.649:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+12월 09, 2021 24:51:34.65 [30208:28020:1209/005134.650:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+12월 09, 2021 24:51:34.66 [30208:28020:1209/005134.663:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+12월 09, 2021 24:55:41.29 [19468:14100:1209/005541.294:ERROR:data_type_manager_impl.cc(35)] Passwords cryptographer error was encountered: 
+12월 09, 2021 24:55:42.11 [19468:14100:1209/005542.111:ERROR:device_event_log_impl.cc(214)] [00:55:42.112] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 24:55:42.11 [19468:14100:1209/005542.113:ERROR:device_event_log_impl.cc(214)] [00:55:42.113] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 24:55:42.11 [19468:20400:1209/005542.115:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+12월 09, 2021 24:55:42.11 [19468:20400:1209/005542.119:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+12월 09, 2021 24:55:42.12 [19468:20400:1209/005542.120:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+12월 09, 2021 24:55:42.12 [19468:20400:1209/005542.127:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+12월 09, 2021 24:59:29.97 [23980:16980:1209/005929.970:ERROR:data_type_manager_impl.cc(35)] Passwords cryptographer error was encountered: 
+12월 09, 2021 24:59:31.57 [23980:11132:1209/005931.573:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+12월 09, 2021 24:59:31.57 [23980:16980:1209/005931.574:ERROR:device_event_log_impl.cc(214)] [00:59:31.574] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 24:59:31.57 [23980:16980:1209/005931.575:ERROR:device_event_log_impl.cc(214)] [00:59:31.576] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 24:59:31.57 [23980:11132:1209/005931.575:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+12월 09, 2021 24:59:31.57 [23980:11132:1209/005931.576:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+12월 09, 2021 24:59:31.58 [23980:11132:1209/005931.582:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+12월 09, 2021 01:02:37.71 [17776:12544:1209/010237.716:ERROR:data_type_manager_impl.cc(35)] Passwords cryptographer error was encountered: 
+12월 09, 2021 01:02:38.72 [17776:12544:1209/010238.726:ERROR:device_event_log_impl.cc(214)] [01:02:38.727] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 01:02:38.72 [17776:12544:1209/010238.727:ERROR:device_event_log_impl.cc(214)] [01:02:38.728] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 01:02:38.73 [17776:27284:1209/010238.730:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+12월 09, 2021 01:02:38.73 [17776:27284:1209/010238.731:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+12월 09, 2021 01:02:38.73 [17776:27284:1209/010238.731:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+12월 09, 2021 01:02:38.73 [17776:27284:1209/010238.736:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+
+12월 09, 2021 16:14:21.05 NEW SESSION
+12월 09, 2021 16:14:21.05 [19668:22340:1209/161421.045:ERROR:data_type_manager_impl.cc(35)] Passwords cryptographer error was encountered: 
+12월 09, 2021 16:14:21.45 [19668:22340:1209/161421.452:ERROR:device_event_log_impl.cc(214)] [16:14:21.452] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 16:14:21.45 [19668:22340:1209/161421.453:ERROR:device_event_log_impl.cc(214)] [16:14:21.453] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 09, 2021 16:14:26.40 [19668:14488:1209/161426.407:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+12월 09, 2021 16:14:26.40 [19668:14488:1209/161426.409:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+12월 09, 2021 16:14:26.41 [19668:14488:1209/161426.409:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+12월 09, 2021 16:14:26.43 [19668:14488:1209/161426.429:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+
+12월 16, 2021 24:02:56.43 NEW SESSION
+12월 16, 2021 24:02:56.43 [18300:12448:1216/000256.432:ERROR:data_type_manager_impl.cc(35)] Passwords cryptographer error was encountered: 
+12월 16, 2021 24:02:56.82 [18300:12448:1216/000256.826:ERROR:device_event_log_impl.cc(214)] [00:02:56.825] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 16, 2021 24:02:56.82 [18300:12448:1216/000256.827:ERROR:device_event_log_impl.cc(214)] [00:02:56.826] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �ý��ۿ� ������ ��ġ�� �۵����� �ʽ��ϴ�. (0x1F)
+12월 16, 2021 24:02:58.27 [18300:9024:1216/000258.278:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+12월 16, 2021 24:02:58.28 [18300:9024:1216/000258.286:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+12월 16, 2021 24:02:58.29 [18300:9024:1216/000258.293:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+12월 16, 2021 24:02:58.39 [18300:9024:1216/000258.396:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+12월 16, 2021 01:29:16.17 [18300:12448:1216/012916.173:ERROR:device_event_log_impl.cc(214)] [01:29:16.174] USB: usb_service_win.cc:261 Failed to get device driver name: ��Ұ� �����ϴ�. (0x490)

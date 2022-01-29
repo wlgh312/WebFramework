@@ -1,0 +1,39 @@
+package edu.kim.finalP.db;
+
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
+
+import edu.kim.finalP.StdInform;
+
+@Component
+public class InfoDB {
+	private JdbcTemplate jdbcTemplate;
+	@Autowired
+	public void setDataSource(DataSource datasource){
+		this.jdbcTemplate = new JdbcTemplate(datasource);
+	}
+	public void create(StdInform inf) {
+		String sql = "INSERT INTO stdinfo(id, name, wriTest, pracTest, admission, etc) values(?,?,?,?,?,?)";
+		jdbcTemplate.update(sql, inf.getId(), inf.getName(), inf.getWriTest(), inf.getPracTest(), inf.getAdmission(), inf.getEtc());
+	}
+	public List<StdInform> select(){
+		String sql="select * from stdinfo";
+		List<StdInform> inf = jdbcTemplate.query(sql, new InfMapper());
+		System.out.println("select 값 : "+inf);
+		return inf;
+	}
+	public StdInform select(int seq) {
+		String sql = "select * from stdinfo where seq=?";
+		StdInform inf = jdbcTemplate.queryForObject(sql, new Object[] {seq}, new InfMapper());
+		return inf;
+	}
+	public void update(StdInform inf) {
+		String sql = "update stdinfo set id=?, name?, wriTest=?, pracTest=?, admission=?, etc=? where seq=?";
+		jdbcTemplate.update(sql, inf.getId(), inf.getName(), inf.getWriTest(), inf.getPracTest(), inf.getAdmission(), inf.getEtc(), inf.getSeq());
+	}
+}

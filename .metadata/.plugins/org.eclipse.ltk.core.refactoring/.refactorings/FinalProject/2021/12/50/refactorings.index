@@ -1,0 +1,10 @@
+1639036140164	Rename type 'HomeController'
+1639036900794	Rename resource 'home.jsp'
+1639037045786	Delete element
+1639151281389	Encapsulate field 'attendance'
+1639151298149	Encapsulate field 'assignment'
+1639151302298	Encapsulate field 'project'
+1639151306119	Encapsulate field 'midTest'
+1639151310007	Encapsulate field 'finalTest'
+1639156966056	Encapsulate field 'midPic'
+1639201333206	Encapsulate field 'grade'

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="grad" class="week6.GraduateTwo">
+<property name="uni" value="한림대"></property>
+<property name="dept" value="소프트웨어 융합대학"/>
+<property name="major" value="빅데이터"/>
+<property name="num" value="20175125"/>
+<property name="name" value="홍길동"/>
+<property name="grade" value="112"/>
+</bean>
+</beans>

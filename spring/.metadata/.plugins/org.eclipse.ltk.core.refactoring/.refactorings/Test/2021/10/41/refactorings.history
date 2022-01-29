@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;Test/src/main/java/hw6&apos;&#x0D;&#x0A;- Original project: &apos;Test&apos;&#x0D;&#x0A;- Destination element: &apos;Test/src/main/java/hw6&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     week5.Instrumentalist.java&#x0D;&#x0A;     week5.Main.java&#x0D;&#x0A;     week5.Performer.java" description="Copy compilation units" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hw6" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;week5{Instrumentalist.java" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;week5{Main.java" element3="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;week5{Performer.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1633618818834" units="3" version="1.0"/>
+</session>

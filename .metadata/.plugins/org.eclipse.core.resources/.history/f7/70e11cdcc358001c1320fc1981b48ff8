@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+
+<%@ page session="false" %>
+<html>
+<head>
+	<title>Student List</title>
+</head>
+<body>
+<h1>
+학생 목록
+</h1>
+<table border=1>
+<tr>
+<th>순서</th><th>아이디</th><th>성명</th><th>필기 시험</th><th>실기 시험</th><th>입학 여부</th><th>기타</th><th>청탁 의심</th>
+</tr>
+<c:forEach var="inf_n" items="${inf_cmd}">
+<tr>
+<td><a href="inf_list.do?seq=${inf_n.seq }">${inf_n.seq }</a></td>
+<td>${inf_n.id }</td>
+<td>${inf_n.name }</td>
+<td>${inf_n.wriTest }</td>
+<td>${inf_n.pracTest }</td>
+<td>${inf_n.admission }</td>
+<td>${inf_n.etc }</td>
+<td>의심</td>
+</tr>
+</c:forEach>
+</table>
+</body>
+</html>

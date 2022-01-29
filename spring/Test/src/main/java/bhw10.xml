@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+<bean id="gradtwo" class="week10_1.GraduateTwo">
+<constructor-arg value="소프트웨어 융합대학"/>
+<constructor-arg value="홍길동"/>
+<constructor-arg value="113"/>
+</bean>
+
+<bean id="grad" class="week10_1.Graduate">
+<constructor-arg value="빅데이터"/>
+<constructor-arg value="20175125"/>
+<constructor-arg ref="gradtwo"/>
+</bean>
+
+<bean id="monitor" class="week10_1.studentMonitor"/>
+<aop:config>
+<aop:aspect ref="monitor">
+<aop:before pointcut="execution(* *.GradResult(..))" method="checkGraduate"/>
+<aop:around pointcut="execution(* *.GradResult(..))" method="noCheckGraduate"/>
+</aop:aspect>
+</aop:config>
+
+
+</beans>

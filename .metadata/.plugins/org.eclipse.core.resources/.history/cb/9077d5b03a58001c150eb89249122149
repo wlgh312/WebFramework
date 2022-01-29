@@ -1,0 +1,22 @@
+package edu.kim.finalP.db;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import org.springframework.jdbc.core.RowMapper;
+
+
+import edu.kim.finalP.Inform;
+
+public class InfMapper {
+	public Inform mapRow(ResultSet rs, int rowNum) throws SQLException{
+		Inform inf = new Inform();
+		inf.setSeq(rs.getInt("seq"));
+		inf.setId(rs.getString("id"));
+		inf.setName(rs.getString("name"));
+		inf.setWriTest(rs.getInt("wriTest"));
+		inf.setPracTest(rs.getInt("pracTest"));
+		inf.setAdmission(rs.getInt("admission"));
+		inf.setEtc(rs.getString("etc"));
+		return inf;
+	}
+}
